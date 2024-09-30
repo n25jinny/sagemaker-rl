@@ -1,6 +1,7 @@
 ARG CPU_OR_GPU
 ARG AWS_REGION
-FROM 520713654638.dkr.ecr.${AWS_REGION}.amazonaws.com/sagemaker-rl-mxnet:coach0.11.0-${CPU_OR_GPU}-py3
+# FROM 520713654638.dkr.ecr.${AWS_REGION}.amazonaws.com/sagemaker-rl-mxnet:coach0.11.0-${CPU_OR_GPU}-py3
+FROM 211125790189.dkr.ecr.ap-northeast-2.amazonaws.com/sagemaker-rl-mxnet:coach0.11.0-cpu-py3
 
 RUN pip install -U pip
 
